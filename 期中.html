@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+    <style>
+        body {
+            
+            text-align: center; /*字體置中*/
+            margin: 0 0;
+            padding: 0 0;
+            background-size: cover; /*固定背景比例*/
+            background-color: #14cfff;
+            background-image: url(https://pic.web.sdo.com/mxd/mxd/web4/project/20080326v061/images/4.gif);
+            background-attachment:fixed;   /*背景圖案是否隨網頁捲軸捲動*/
+        }
+        .title {
+            font-family: 標楷體; /*字體*/
+            color: #3e0080;
+            text-shadow: 2px 2px 2px #c572ff; /*陰影*/
+            font-size: 15px;
+            font-weight: 500; /*字體粗細*/
+        }
+        p > span {
+            color: #ff73e0;
+            text-shadow: 4px 2px 2px #ff5800; /*陰影*/
+            font-size: 60px;
+        }
+        nav {
+            width: 100%;
+            font-size: 20px;
+            letter-spacing: 5px; /*字間距*/
+            text-decoration-line: none;
+        }
+        .導覽頁 {
+            padding: 2px 2px 2px 6px;
+            color:black;
+            border-width: 2px; /*邊框*/
+            border-color:#ff00ef red;
+            border-style: outset;
+            border-radius: 10px; /*圓框*/
+            background-color: #fff7bc; /*導覽頁底色*/
+        }
+        a:link { /*未連結前超連結文字*/
+            font-family: 標楷體;
+            text-decoration: none; /*無底線*/
+            color: #ff5800;
+            text-shadow:1px 1px 2px white;
+            position: relative;
+        }
+        a:visited { /*已連結過的超連結文字*/
+            color: black;
+            border-color: #ffc26a;
+        }
+        a:hover{
+
+        }
+            nav > a { /*導覽列設定*/
+                font-weight: 800;
+                font-family: 新細明體; /*字體*/
+                color: #0094ff;
+                font-size: 20px;
+                font-weight: 800; /*字體粗細*/
+            }
+            
+        .LOGO {
+            cursor: url(https://cur.cursors-4u.net/toons/images7/too636.gif),auto; /*鼠標樣式*/
+            margin: 20px 20px 20px 20px;
+            width: 1200px; /*固定 LOGO 尺寸*/
+        }
+        table {
+            margin:0 0 20px 0;
+            font-size: 20px;
+            font-weight: 700;
+            /*特殊邊框*/
+            border-width: 50px;
+            border-style: solid; /*缺少 border-style 花樣圖示會無法顯示*/
+            border-image: url(https://www.silvitablanco.com.ar/winnie_pooh/winnie_pooh_5/new/29176948_1.gif) 1800 640 fill;
+            border-image-source: url(pets.png); /*小動物邊框*/
+        }
+        .pooh {
+            border-image-source: url(https://www.silvitablanco.com.ar/winnie_pooh/winnie_pooh_5/new/29176948_1.gif);
+        }
+        table,tr {
+            /*固定介紹區位置*/
+            padding:20px; /*內邊留白*/
+            background-color:#ffe5c0;
+            position:relative;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        table,tr,td {
+            width: 1250px;
+        }
+        .各類甜點標題 {
+                width: 40px;
+                font-size: 35px;
+            }
+        .簡介{
+            text-align:left;  /*字體置左*/
+        }
+        .鬆餅細項標題 {
+            font-size:30px;
+        }
+        iframe {
+            float: right;
+            border-color: #ff6d00 #53ff00; /*color( top & bottom , right & letf )*/
+            border-radius: 10px 50px; 
+            border-width: 3px;
+            border-style: ridge;
+        }
+        ul {
+            text-align: left;
+            list-style-type: square;
+            list-style-position: inside;
+            list-style-image: none;
+        }
+        .wa-position {
+            position: relative;
+            top: 50px;
+            height: 250px;
+        }
+        /*回開頭特效*/
+        div > a:hover {
+            text-shadow: 0px 0px 0px white; /*去除陰影*/
+            transition: 2s; /*效果延遲*/
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <audio src="汪蘇瀧 - 有點甜.mp3" type="audio/mpeg" controls preload="auto" style="width:500px;"></audio>
+    <!--LOGO-->
+    <p class="title" id="開頭"><span>甜點</span>營造愉悅的心情🍰</p>
+
+    <!--導覽頁-->
+    <nav>
+        <a href="#Waffle" class="導覽頁">鬆餅</a>  <!--href為「錨點連結切換」所用，其中 # 不可省略-->
+        <a href="#brownie" class="導覽頁">布朗尼</a>
+        <a href="#Cannelés" class="導覽頁">可麗露</a>
+        <a href="#madeleine" class="導覽頁">瑪德蓮</a>
+        <!--<a href="#Waffle">鬆餅</a>-->
+    </nav>
+
+    <!--視覺主圖-->
+    <img src="LOGO.jpg" class="LOGO">
+
+    <table class="pooh">
+        <tr><td colspan="5" class="各類甜點標題" id="Waffle">鬆餅</td></tr>
+        <tr class="簡介"><td colspan="5">鬆餅其實有很多種類唷!<br />你知道的種類有多少呢~?<br />就讓我們來看看較常見的幾種吧!<br /><br /></td></tr>
+
+        <!--鬆餅種類-連結-->
+        <tr class="簡介">
+            <td><a href="#比利時鬆餅">👉比利時鬆餅(Waffle)</a></td>
+            <td><a href="#美式鬆餅">👉美式鬆餅(Pancake)</a></td>
+            <td><a href="#英式鬆餅">👉英式鬆餅(Scone)</a></td>
+            <td><a href="#法式舒芙蕾">👉法式舒芙蕾(Soufflé)</a></td>
+            <td><a href="#法式可麗餅">👉法式可麗餅(Crepe)</a></td>
+        </tr>
+
+        <tr id="比利時鬆餅">
+            <td colspan="5" class="鬆餅細項標題"><p><hr />比利時鬆餅(Waffle)</p></td>
+        </tr>
+        <tr>
+            <td colspan="5" class="簡介">
+
+                <blockquote>
+                    起源於比利時，又稱格子鬆餅、格子餅、華夫餅。<br />
+                    經由鬆餅機加壓烘烤製成格子狀的鬆餅，口感比美式鬆餅酥脆許多!
+
+                    <iframe class="wa-position" src="https://www.youtube.com/embed/PRJNtgU4Mlc" style="top:80px"></iframe>  <!--youtube-->
+                    <img class="wa-position" src="https://www.jocooks.com/wp-content/uploads/2020/09/belgian-waffles-1-16.jpg" style="float:right;right:100px">
+
+                    <ul>
+                        基本食材:
+                        <li>雞蛋</li>
+                        <li>砂糖</li>
+                        <li>鹽</li>
+                        <li>鮮奶</li>
+                        <li>低筋麵粉</li>
+                        <li>無鹽奶油</li>
+                        <li>速發乾母</li>
+                        <li>鮮奶油</li>
+                        <li>珍珠糖</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+        <tr><td colspan="5"><p><a href="https://www.youtube.com/embed/PRJNtgU4Mlc" target="_blank">👉若影片無法播放，點擊此處將連結至youtube影片🐾</a></p></td></tr>    <!--target="_blank" 跳頁視窗-->
+
+        <tr id="美式鬆餅">
+            <td colspan="5" class="鬆餅細項標題"><p><hr />美式鬆餅(Pancake)</p></td>
+        </tr>
+        <tr style="height: 400px;">
+            <td colspan="5" class="簡介">
+
+                <blockquote>
+                    起源於美國，又稱薄煎餅。<br />
+                    是速食店出現的鬆餅早餐，也是美國家庭裡最常見的鬆餅類型。<br />
+                    經由平底鍋煎製成一片片扁平狀的鬆餅，外脆內軟~
+
+                    <iframe class="wa-position" src="https://www.youtube.com/watch?v=6RWDsM1mzbk"></iframe>  <!--youtube-->
+                    <img class="wa-position" src="https://www.wholesomeyum.com/wp-content/uploads/2017/03/wholesomeyum-Low-Carb-Keto-Pancakes-Recipe-21.jpg" style="float:right;right:100px">
+
+                    <ul>
+                        基本食材:
+                        <li>雞蛋</li>
+                        <li>砂糖</li>
+                        <li>鹽</li>
+                        <li>鮮奶</li>
+                        <li>低筋麵粉</li>
+                        <li>奶油</li>
+                        <li>泡打粉</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+        <tr><td colspan="5"><p><a href="https://www.youtube.com/watch?v=6RWDsM1mzbk" target="_blank">👉若影片無法播放，點擊此處將連結至youtube影片🐾</a></p></td></tr>
+
+        <tr id="英式鬆餅">
+            <td colspan="5" class="鬆餅細項標題"><p><hr />英式鬆餅(Scone)</p></td>
+        </tr>
+        <tr style="height: 400px;">
+            <td colspan="5" class="簡介">
+
+                <blockquote>
+                    起源於英國，又稱司康、英國茶餅，是英式下午茶常見的點心。<br />
+                    一塊塊的司康，表皮酥脆、內層紮實~
+
+                    <iframe class="wa-position" src="https://www.youtube.com/watch?v=HV5UFLep8UA"></iframe>  <!--youtube-->
+                    <img class="wa-position" src="https://media.healthyfood.com/wp-content/uploads/2016/09/basic-scones-iStock-926828574-1024x652.jpg" style="float:right;height:200px;top:70px ;right:100px;">
+
+                    <ul>
+                        基本食材:
+                        <li>雞蛋</li>
+                        <li>細砂糖</li>
+                        <li>鹽</li>
+                        <li>鮮奶</li>
+                        <li>中筋麵粉</li>
+                        <li>無鹽奶油</li>
+                        <li>泡打粉</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+        <tr><td colspan="5"><p><a href="https://www.youtube.com/watch?v=HV5UFLep8UA" target="_blank">👉若影片無法播放，點擊此處將連結至youtube影片🐾</a></p></td></tr>
+
+        <tr id="法式舒芙蕾">
+            <td colspan="5" class="鬆餅細項標題"><p><hr />法式舒芙蕾(Soufflé)</p></td>
+        </tr>
+        <tr style="height: 450px;">
+            <td colspan="5" class="簡介">
+
+                <blockquote>
+                    起源於法國，又稱梳乎厘、梳芙厘。<br />
+                    蓬鬆綿密，入口即化~<br />
+                    但要注意!離開烤箱後，就會開始塌陷，所以要趁熱吃唷~
+
+                    <iframe class="wa-position" src="https://www.youtube.com/watch?v=W_iGwRao79s"></iframe>  <!--youtube-->
+                    <img class="wa-position" src="https://i8.meishichina.com/attachment/recipe/2017/02/16/20170216148723076062110082668.jpeg?x-oss-process=style/p800" style="float: right; height: 200px; top: 40px; right: 100px; ">
+
+                    <ul>
+                        基本食材:
+                        <li>雞蛋</li>
+                        <li>砂糖</li>
+                        <li>鮮奶</li>
+                        <li>中筋麵粉</li>
+                        <li>奶油</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+        <tr><td colspan="5"><p><a href="https://www.youtube.com/watch?v=W_iGwRao79s" target="_blank">👉若影片無法播放，點擊此處將連結至youtube影片🐾</a></p></td></tr>
+
+        <tr id="法式可麗餅">
+            <td colspan="5" class="鬆餅細項標題"><p><hr />法式可麗餅(Crepe)</p></td>
+        </tr>
+        <tr style="height: 400px;">
+            <td colspan="5" class="簡介">
+
+                <blockquote>
+                    起源於法國，又稱甜薄餅、薄烤餅，是法國人的家常點心。<br />
+                    由特殊的烤盤或平底鍋煎，製成又薄又大的輕薄餅皮，再把餅皮捲起來或摺成三角狀，口感軟嫩帶有Q感。
+
+                    <iframe class="wa-position" src="https://www.youtube.com/watch?v=AoEs6eqkAC4" style="top:20px;"></iframe>  <!--youtube-->
+                    <img class="wa-position" src="https://www.livewellbakeoften.com/wp-content/uploads/2021/02/Crepes-8s.jpg" style="float: right; right: 100px; top: 20px; ">
+
+                    <ul>
+                        基本食材:
+                        <li>雞蛋</li>
+                        <li>砂糖</li>
+                        <li>鹽</li>
+                        <li>鮮奶</li>
+                        <li>中筋麵粉</li>
+                        <li>奶油</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+        <tr><td colspan="5"><a href="https://www.youtube.com/watch?v=AoEs6eqkAC4" target="_blank">👉若影片無法播放，點擊此處將連結至youtube影片🐾</a></td></tr>
+    </table>
+
+    <table>
+        <tr><td colspan="5" class="各類甜點標題" id="brownie">布朗尼(Brownie)</td></tr>
+        <tr style="height: 400px;">
+            <td colspan="5" class="簡介">
+
+                <blockquote>
+                    起源於美國，又稱波士頓布朗尼、巧克力布朗尼，是美國經典的代表甜食。<br />
+                    嚐起來比餅乾濕潤又比蛋糕乾，外酥而內軟，充滿嚼勁。
+
+                    <iframe class="wa-position" src="https://www.youtube.com/watch?v=r5Pugble11Q" style="top:40px;"></iframe>  <!--youtube-->
+                    <img class="wa-position" src="https://th.bing.com/th/id/R.80e3258e8d141e0798b423f64cc2f37a?rik=mjFTBM9EF3hxXw&pid=ImgRaw&r=0" style="float: right; right: 100px; top: 20px; ">
+
+                    <ul>
+                        基本食材:
+                        <li>雞蛋</li>
+                        <li>砂糖</li>
+                        <li>鹽</li>
+                        <li>鮮奶</li>
+                        <li>中筋麵粉</li>
+                        <li>無鹽奶油</li>
+                        <li>水</li>
+                        <li>可可粉</li>
+                        <li>核桃</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+        <tr><td colspan="5"><a href="https://www.youtube.com/watch?v=r5Pugble11Q" target="_blank">👉若影片無法播放，點擊此處將連結至youtube影片🐾</a></td></tr>
+    </table>
+
+    <table class="pooh">
+        <tr><td colspan="5" class="各類甜點標題" id="Cannelés">可麗露(Cannelés)</td></tr>
+        <tr style="height: 400px;">
+            <td colspan="5" class="簡介">
+
+                <blockquote>
+                    起源於法國，又稱天使之鈴、卡納蕾、可露麗。<br />
+                    小巧美味，外酥內Q。
+
+                    <iframe class="wa-position" src="https://www.youtube.com/watch?v=gtYHRA3vxNM" style="top:20px;"></iframe>  <!--youtube-->
+                    <img class="wa-position" src="https://i.ytimg.com/vi/tHe7rxHgflk/maxresdefault.jpg" style="float: right; right: 70px; top: 20px; ">
+
+                    <ul>
+                        基本食材:
+                        <li>雞蛋</li>
+                        <li>砂糖</li>
+                        <li>鮮奶</li>
+                        <li>低筋麵粉</li>
+                        <li>奶油</li>
+                        <li>香草莢</li>
+                        <li>蘭姆酒</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+        <tr><td colspan="5"><a href="https://www.youtube.com/watch?v=gtYHRA3vxNM" target="_blank">👉若影片無法播放，點擊此處將連結至youtube影片🐾</a></td></tr>
+    </table>
+
+    <table>
+        <tr><td colspan="5" class="各類甜點標題" id="madeleine">瑪德蓮(Madeleine)</td></tr>
+        <tr style="height: 400px;">
+            <td colspan="5" class="簡介">
+
+                <blockquote>
+                    起源於法國，又稱貝殼小蛋糕，法國傳統市場或精緻糕點店都能看見瑪德蓮的身影~<br />
+                    具有貝殼造型外觀，雖然蛋糕體的孔隙、軟硬度看起來與磅蛋糕類似，但口感濕潤。
+
+                    <iframe class="wa-position" src="https://www.youtube.com/watch?v=24WdISWIPGY" style="top:20px;"></iframe>  <!--youtube-->
+                    <img class="wa-position" src="https://www.piesandtacos.com/wp-content/uploads/2019/12/vegan-peanut-butter-truffles-4.jpg" style="float: right; right: 100px; top: 20px; ">
+
+                    <ul>
+                        基本食材:
+                        <li>雞蛋</li>
+                        <li>砂糖</li>
+                        <li>鹽</li>
+                        <li>鮮奶</li>
+                        <li>低筋麵粉</li>
+                        <li>奶油</li>
+                        <li>泡打粉</li>
+                    </ul>
+                </blockquote>
+            </td>
+        </tr>
+        <tr><td colspan="5"><a href="https://www.youtube.com/watch?v=24WdISWIPGY" target="_blank">👉若影片無法播放，點擊此處將連結至youtube影片🐾</a></td></tr>
+    </table>
+
+
+    <div>
+        <a href="#開頭">🚀回到本頁開頭</a>
+        <footer>
+            本網站為作業所用，如有侵權敬請告知!<br />
+            資料來源:<a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">維基百科</a>
+        </footer>
+    </div>
+</body>
+</html>
